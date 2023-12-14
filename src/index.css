@@ -12,3 +12,7 @@ body {
 header {
     z-index: 1001 !important;
 }
+
+.btn-primary {
+    @apply px-7 py-2 bg-brandPrimary text-white rounded transition-all duration-300 hover:-translate-y-4;
+}
