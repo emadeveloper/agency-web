@@ -3,12 +3,12 @@ import { Link } from "react-scroll";
 import { FaXmark, FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
-  const [ismenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   /* set toggle Menu */
   const toggleMenu = () => {
-    setIsMenuOpen(!ismenuOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Navbar = () => {
     <header className=" w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
       <nav
         className={`py-4 lg:px-14 px-4 ${
-          isSticky ? "sticky top-0 right-0 border-b bg-white duration-300" : ""
+          isSticky ? "sticky top-0 right-0 border bg-white duration-300" : ""
         }`}
       >
         <div className="flex justify-between items-center text-base gap-8">
@@ -83,7 +83,7 @@ const Navbar = () => {
             <button
              onClick={toggleMenu}
             className="text-neutralDGray focus:outline-none focus:text-gray-500">
-              {ismenuOpen ? (
+              {isMenuOpen ? (
                 <FaXmark className="h-6 text-neutralDGray" />
               ) : (
                 <FaBars className="h-6 text-neutralDGray" />
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
         {/* nav items for mobile */}
       </nav>
-            <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ ismenuOpen ? 'block fixed top-0 right-0 left-0' : 'hidden'} `}>
+            <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? 'block fixed top-0 right-0 left-0' : 'hidden'} `}>
             {navItems.map(({ link, path }) => (
               <Link
                 key={path}
