@@ -31,7 +31,7 @@ const Navbar = () => {
     { link: "Home", path: "home" },
     { link: "Service", path: "service" },
     { link: "About", path: "about" },
-    { link: "Product", path: "product" },
+    { link: "Product", path: "products" },
     { link: "Testimonial", path: "testimonial" },
     { link: "FAQ", path: "faq" },
   ];
@@ -60,7 +60,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                className="block text-base text-gray-900 hover:text-brandPrimary first:font-medium"
+                className="block text-base text-gray-900 hover:text-brandPrimary first:font-medium cursor-pointer"
               >
                 {link}
               </Link>

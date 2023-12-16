@@ -7,7 +7,7 @@ const Blog = () => {
         {id: 3, title:'Revamping the Membership Model with Triathlon Australia', img: ''}
     ]
     return (
-    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12 '>
+    <div className='px-4 lg:px-14 max-w-screen-2x1 mx-auto my-12 ' id='faq'>
         <div>
         <h2 className="text-4xl text-neutralDGray font-semibold mb-4">
               Caring is the new marketing

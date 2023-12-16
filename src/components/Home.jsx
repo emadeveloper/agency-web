@@ -3,7 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-neutralSilver">
+    <div className="bg-neutralSilver" id="home">
       <div className="px-4 lg:px-14 max-w-screen-2x1 mx-auto min-h-screen h-screen">
         <Carousel className="w-full mx-auto">
           {/* hero image */}
